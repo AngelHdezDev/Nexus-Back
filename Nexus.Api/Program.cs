@@ -26,7 +26,7 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("NexusPolicy", policy =>
     {
-        policy.WithOrigins("http://localhost:5173") // El puerto de tu React
+        policy.WithOrigins("nexus-front-xlarrr.vercel.app") // El puerto de tu React
               .AllowAnyHeader()
               .AllowAnyMethod();
     });
