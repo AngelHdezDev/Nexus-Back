@@ -1,13 +1,14 @@
+C:\Users\USER\source\repos\Nexus\Nexus.Infrastructure\obj\Debug\net10.0\Nexus.Infrastructure.csproj.AssemblyReference.cache
 C:\Users\USER\source\repos\Nexus\Nexus.Infrastructure\obj\Debug\net10.0\Nexus.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\USER\source\repos\Nexus\Nexus.Infrastructure\obj\Debug\net10.0\Nexus.Infrastructure.AssemblyInfoInputs.cache
 C:\Users\USER\source\repos\Nexus\Nexus.Infrastructure\obj\Debug\net10.0\Nexus.Infrastructure.AssemblyInfo.cs
 C:\Users\USER\source\repos\Nexus\Nexus.Infrastructure\obj\Debug\net10.0\Nexus.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\USER\source\repos\Nexus\Nexus.Infrastructure\obj\Debug\net10.0\Nexus.Infrastructure.sourcelink.json
 C:\Users\USER\source\repos\Nexus\Nexus.Infrastructure\bin\Debug\net10.0\Nexus.Infrastructure.deps.json
 C:\Users\USER\source\repos\Nexus\Nexus.Infrastructure\bin\Debug\net10.0\Nexus.Infrastructure.dll
 C:\Users\USER\source\repos\Nexus\Nexus.Infrastructure\bin\Debug\net10.0\Nexus.Infrastructure.pdb
 C:\Users\USER\source\repos\Nexus\Nexus.Infrastructure\bin\Debug\net10.0\Nexus.Domain.dll
 C:\Users\USER\source\repos\Nexus\Nexus.Infrastructure\bin\Debug\net10.0\Nexus.Domain.pdb
-C:\Users\USER\source\repos\Nexus\Nexus.Infrastructure\obj\Debug\net10.0\Nexus.Infrastructure.csproj.AssemblyReference.cache
 C:\Users\USER\source\repos\Nexus\Nexus.Infrastructure\obj\Debug\net10.0\Nexus.In.24294F3D.Up2Date
 C:\Users\USER\source\repos\Nexus\Nexus.Infrastructure\obj\Debug\net10.0\Nexus.Infrastructure.dll
 C:\Users\USER\source\repos\Nexus\Nexus.Infrastructure\obj\Debug\net10.0\refint\Nexus.Infrastructure.dll

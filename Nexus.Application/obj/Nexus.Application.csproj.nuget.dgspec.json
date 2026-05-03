@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\USER\\source\\repos\\Nexus\\Nexus.Application\\Nexus.Application.csproj": {}
+    "C:\\Users\\USER\\source\\repos\\Nexus\\Nexus.Application\\Nexus.Application.csproj": {}
   },
   "projects": {
-    "c:\\Users\\USER\\source\\repos\\Nexus\\Nexus.Application\\Nexus.Application.csproj": {
+    "C:\\Users\\USER\\source\\repos\\Nexus\\Nexus.Application\\Nexus.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\USER\\source\\repos\\Nexus\\Nexus.Application\\Nexus.Application.csproj",
+        "projectUniqueName": "C:\\Users\\USER\\source\\repos\\Nexus\\Nexus.Application\\Nexus.Application.csproj",
         "projectName": "Nexus.Application",
-        "projectPath": "c:\\Users\\USER\\source\\repos\\Nexus\\Nexus.Application\\Nexus.Application.csproj",
+        "projectPath": "C:\\Users\\USER\\source\\repos\\Nexus\\Nexus.Application\\Nexus.Application.csproj",
         "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\USER\\source\\repos\\Nexus\\Nexus.Application\\obj\\",
+        "outputPath": "C:\\Users\\USER\\source\\repos\\Nexus\\Nexus.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "c:\\Users\\USER\\source\\repos\\Nexus\\Nexus.Domain\\Nexus.Domain.csproj": {
-                "projectPath": "c:\\Users\\USER\\source\\repos\\Nexus\\Nexus.Domain\\Nexus.Domain.csproj"
+              "C:\\Users\\USER\\source\\repos\\Nexus\\Nexus.Domain\\Nexus.Domain.csproj": {
+                "projectPath": "C:\\Users\\USER\\source\\repos\\Nexus\\Nexus.Domain\\Nexus.Domain.csproj"
               }
             }
           }
@@ -54,6 +54,10 @@
         "net10.0": {
           "targetAlias": "net10.0",
           "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
             "Microsoft.IdentityModel.Tokens": {
               "target": "Package",
               "version": "[8.18.0, )"
@@ -361,14 +365,14 @@
         }
       }
     },
-    "c:\\Users\\USER\\source\\repos\\Nexus\\Nexus.Domain\\Nexus.Domain.csproj": {
+    "C:\\Users\\USER\\source\\repos\\Nexus\\Nexus.Domain\\Nexus.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\USER\\source\\repos\\Nexus\\Nexus.Domain\\Nexus.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\USER\\source\\repos\\Nexus\\Nexus.Domain\\Nexus.Domain.csproj",
         "projectName": "Nexus.Domain",
-        "projectPath": "c:\\Users\\USER\\source\\repos\\Nexus\\Nexus.Domain\\Nexus.Domain.csproj",
+        "projectPath": "C:\\Users\\USER\\source\\repos\\Nexus\\Nexus.Domain\\Nexus.Domain.csproj",
         "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\USER\\source\\repos\\Nexus\\Nexus.Domain\\obj\\",
+        "outputPath": "C:\\Users\\USER\\source\\repos\\Nexus\\Nexus.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

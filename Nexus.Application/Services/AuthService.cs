@@ -1,21 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using System.Threading.Tasks; // Necesario para Task
+using System.Threading.Tasks;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using Microsoft.IdentityModel.Tokens;
-using Microsoft.Extensions.Configuration; // <--- Agregado para leer el appsettings
+using Microsoft.Extensions.Configuration;
 using Nexus.Domain.Interfaces;
 using Nexus.Domain.Entities;
 using Nexus.Application.DTOs;
+using BCrypt.Net; // <--- Asegúrate de haber corrido: dotnet add package BCrypt.Net-Next
 
 namespace Nexus.Application.Services;
 
 public class AuthService
 {
     private readonly IUserRepository _userRepository;
-    private readonly IConfiguration _configuration; // <--- Inyectamos la configuración
+    private readonly IConfiguration _configuration;
 
     public AuthService(IUserRepository userRepository, IConfiguration configuration)
     {
@@ -27,15 +28,16 @@ public class AuthService
     {
         var user = await _userRepository.GetByEmailAsync(email);
 
-        // 1. Validar credenciales contra SQL Server
-        if (user == null || user.PasswordHash != password) 
+        // 1. Validar credenciales usando BCrypt
+        // Ya no comparamos directamente con '==', ahora verificamos el hash
+        if (user == null || !BCrypt.Net.BCrypt.Verify(password, user.PasswordHash)) 
             return null;
 
         // 2. Generar el Token JWT
         var tokenHandler = new JwtSecurityTokenHandler();
         
-        // Obtenemos la llave desde el appsettings.json
-        var secretKey = _configuration["Jwt:Key"];
+        // Usamos el operador "!" para asegurar que la Key no sea nula y evitar el warning de la imagen image_fcdd04.png
+        var secretKey = _configuration["Jwt:Key"] ?? throw new InvalidOperationException("JWT Key no configurada en appsettings.json");
         var key = Encoding.ASCII.GetBytes(secretKey);
         
         var tokenDescriptor = new SecurityTokenDescriptor
@@ -54,7 +56,6 @@ public class AuthService
 
         var token = tokenHandler.CreateToken(tokenDescriptor);
 
-        // 3. Devolver el objeto completo
         return new LoginResponse
         {
             Token = tokenHandler.WriteToken(token),

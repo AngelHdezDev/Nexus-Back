@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Lru99BKM2o0=",
+  "dgSpecHash": "Dh2fSZbvzs4=",
   "success": true,
-  "projectFilePath": "c:\\Users\\USER\\source\\repos\\Nexus\\Nexus.Domain\\Nexus.Domain.csproj",
+  "projectFilePath": "C:\\Users\\USER\\source\\repos\\Nexus\\Nexus.Domain\\Nexus.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.extensions.apidescription.server\\10.0.0\\microsoft.extensions.apidescription.server.10.0.0.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.openapi\\2.4.1\\microsoft.openapi.2.4.1.nupkg.sha512",

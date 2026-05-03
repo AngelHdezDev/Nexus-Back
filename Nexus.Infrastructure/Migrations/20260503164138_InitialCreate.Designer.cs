@@ -12,7 +12,7 @@ using Nexus.Infrastructure.Persistence;
 namespace Nexus.Infrastructure.Migrations
 {
     [DbContext(typeof(NexusDbContext))]
-    [Migration("20260502220110_InitialCreate")]
+    [Migration("20260503164138_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -27,9 +27,11 @@ namespace Nexus.Infrastructure.Migrations
 
             modelBuilder.Entity("Nexus.Domain.Entities.User", b =>
                 {
-                    b.Property<Guid>("Id")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");

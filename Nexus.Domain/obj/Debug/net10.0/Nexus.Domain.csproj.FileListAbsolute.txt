@@ -1,12 +1,13 @@
+C:\Users\USER\source\repos\Nexus\Nexus.Domain\bin\Debug\net10.0\Nexus.Domain.deps.json
+C:\Users\USER\source\repos\Nexus\Nexus.Domain\bin\Debug\net10.0\Nexus.Domain.dll
+C:\Users\USER\source\repos\Nexus\Nexus.Domain\bin\Debug\net10.0\Nexus.Domain.pdb
+C:\Users\USER\source\repos\Nexus\Nexus.Domain\obj\Debug\net10.0\Nexus.Domain.csproj.AssemblyReference.cache
 C:\Users\USER\source\repos\Nexus\Nexus.Domain\obj\Debug\net10.0\Nexus.Domain.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\USER\source\repos\Nexus\Nexus.Domain\obj\Debug\net10.0\Nexus.Domain.AssemblyInfoInputs.cache
 C:\Users\USER\source\repos\Nexus\Nexus.Domain\obj\Debug\net10.0\Nexus.Domain.AssemblyInfo.cs
 C:\Users\USER\source\repos\Nexus\Nexus.Domain\obj\Debug\net10.0\Nexus.Domain.csproj.CoreCompileInputs.cache
-C:\Users\USER\source\repos\Nexus\Nexus.Domain\bin\Debug\net10.0\Nexus.Domain.deps.json
-C:\Users\USER\source\repos\Nexus\Nexus.Domain\bin\Debug\net10.0\Nexus.Domain.dll
-C:\Users\USER\source\repos\Nexus\Nexus.Domain\bin\Debug\net10.0\Nexus.Domain.pdb
+C:\Users\USER\source\repos\Nexus\Nexus.Domain\obj\Debug\net10.0\Nexus.Domain.sourcelink.json
 C:\Users\USER\source\repos\Nexus\Nexus.Domain\obj\Debug\net10.0\Nexus.Domain.dll
 C:\Users\USER\source\repos\Nexus\Nexus.Domain\obj\Debug\net10.0\refint\Nexus.Domain.dll
 C:\Users\USER\source\repos\Nexus\Nexus.Domain\obj\Debug\net10.0\Nexus.Domain.pdb
 C:\Users\USER\source\repos\Nexus\Nexus.Domain\obj\Debug\net10.0\ref\Nexus.Domain.dll
-C:\Users\USER\source\repos\Nexus\Nexus.Domain\obj\Debug\net10.0\Nexus.Domain.csproj.AssemblyReference.cache

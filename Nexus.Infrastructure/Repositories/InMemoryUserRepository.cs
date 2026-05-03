@@ -1,17 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Nexus.Domain.Interfaces;
+﻿namespace Nexus.Infrastructure.Repositories;
 using Nexus.Domain.Entities;
+using Nexus.Domain.Interfaces;
 
-namespace Nexus.Infrastructure.Repositories;
 
 public class InMemoryUserRepository : IUserRepository
 {
-    // Simulamos una tabla de usuarios
+    // Cambiamos el Guid.NewGuid() por un número entero (int)
     private readonly List<User> _users = new()
     {
-        new User { Id = Guid.NewGuid(), Email = "admin@nexus.com", PasswordHash = "12345", Nombre = "Admin Nexus" }
+        new User 
+        { 
+            Id = 1, // Ahora coincide con el tipo 'int' de tu entidad
+            Email = "admin@nexus.com", 
+            PasswordHash = "admin123", // Cámbialo para que coincida con tu prueba de login
+            Nombre = "Admin Nexus" 
+        }
     };
 
     public Task<User?> GetByEmailAsync(string email)
