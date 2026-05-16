@@ -167,3 +167,4 @@ C:\Users\USER\source\repos\Nexus\Nexus.Api\obj\Debug\net10.0\refint\Nexus.Api.dl
 C:\Users\USER\source\repos\Nexus\Nexus.Api\obj\Debug\net10.0\Nexus.Api.pdb
 C:\Users\USER\source\repos\Nexus\Nexus.Api\obj\Debug\net10.0\Nexus.Api.genruntimeconfig.cache
 C:\Users\USER\source\repos\Nexus\Nexus.Api\obj\Debug\net10.0\ref\Nexus.Api.dll
+c:\Users\USER\source\repos\Nexus\Nexus.Api\bin\Debug\net10.0\BCrypt.Net-Next.dll

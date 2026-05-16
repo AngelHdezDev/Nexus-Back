@@ -3,7 +3,9 @@ using Nexus.Infrastructure.Repositories;
 using Nexus.Application.Services;
 using Microsoft.EntityFrameworkCore;
 using Nexus.Infrastructure.Persistence;
-
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -26,11 +28,23 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("NexusPolicy", policy =>
     {
-        policy.WithOrigins("nexus-front-xlarrr.vercel.app") // El puerto de tu React
+        policy.WithOrigins("http://localhost:5173") // El puerto de tu React
               .AllowAnyHeader()
               .AllowAnyMethod();
     });
 });
+
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
+    {
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuerSigningKey = true,
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]!)),
+            ValidateIssuer = false,
+            ValidateAudience = false
+        };
+    });
 
 var app = builder.Build();
 
@@ -44,6 +58,7 @@ app.UseSwaggerUI(c => // Quitará el error de la línea 22
 
 app.UseHttpsRedirection();
 app.UseCors("NexusPolicy");
+app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();
 
